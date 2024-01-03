@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gabrielc17/Sequelize-Router-Pkg"
+    "url": "git@github.com:gabrielc17/Sequelize-Router-Pkg.git"
   },
   "author": "",
   "license": "ISC",
