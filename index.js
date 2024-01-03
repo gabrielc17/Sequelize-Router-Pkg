@@ -3,7 +3,6 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const logger = require('../../logger');
 const BuildRouter = require('./src/build-router');
 
 function validatePath(dir) {
@@ -19,7 +18,7 @@ function validatePath(dir) {
     return true;
 }
 
-function RoutesByModel(pathModels, pathControllers) {
+function RoutesByModel(pathModels, pathControllers, logger) {
     const dirToValidate = {
         'Models': pathModels,
         'Controllers': pathControllers
