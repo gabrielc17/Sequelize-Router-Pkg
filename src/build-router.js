@@ -61,9 +61,9 @@ module.exports = class BuildRouter extends SequelizeRouter {
         }
         router.get(
             urlPath,
-            super._filterQuery,
-            super._validatePagination,
-            super._validateSort,
+            super._filterQuery(),
+            super._validatePagination(),
+            super._validateSort(),
             middlewares['get']
         );
         router.get(
